@@ -1,0 +1,47 @@
+/* Sidebar container */
+.sidebar {
+    width: 200px;
+    height: 100vh;
+    background-color: #f2e4f9; /* Light purple background similar to JetSnaps */
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Sidebar title */
+  .sidebar-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Button container */
+  .sidebar-options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  /* Buttons */
+  .sidebar-button {
+    background-color: #6c63ff; /* Purple button color */
+    color: #fff;
+    border: none;
+    padding: 10px;
+    text-align: left;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Hover effect */
+  .sidebar-button:hover {
+    background-color: #574b90; /* Darker purple on hover */
+  }
+  
+  /* Optional: Active button */
+  .sidebar-button:active {
+    background-color: #44366b; /* Even darker purple on active */
+  }
+  

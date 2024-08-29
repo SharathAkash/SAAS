@@ -1,38 +1,101 @@
-.App {
-  text-align: center;
+/* Base Styles */
+body {
+  background-color: #f8e7f4;
+  font-family: Arial, sans-serif;
+  color: #333333;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+
+.logo {
+  width: 100px; /* Adjust as needed */
+  height: auto; /* Keep the aspect ratio */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Navbar */
+.navbar {
+  background-color: #ff4081;
+  padding: 20px;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar a:hover {
+  background-color: #ff80ab; /* lighter pink for hover */
+}
+
+/* Sidebar */
+.sidebar {
+  width: 200px;
+  background-color: #f2e4f9;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar a {
+  display: block;
+  color: #6200ea;
+  text-decoration: none;
+  margin-bottom: 10px;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+.sidebar a:hover {
+  background-color: #f2d1e8; /* darker pinkish-purple for hover */
+}
+
+/* Main Content */
+.main-content {
+  flex: 1;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.video-section {
+  margin-top: 20px;
+}
+
+.video-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+.automate-button, .publish-button {
+  background-color: #ff4081;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.automate-button:hover, .publish-button:hover {
+  background-color: #ff80ab; /* lighter pink for hover */
+}
+
+/* App Container */
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Full height of the viewport */
+}
+
+.content {
+  display: flex;
+  flex: 1; /* Take up remaining space */
 }
